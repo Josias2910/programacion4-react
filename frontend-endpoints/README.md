@@ -18,7 +18,7 @@ Requiere Node 22.12 o superior y la API de usuarios de clase encendida.
 ```sh
 cd practica1
 npm ci
-cp .env.example .env
+cp ../../.env.example .env
 ```
 
 Completar `VITE_API_URL` en `.env` con la dirección del backend local (por ejemplo, `http://localhost:8000`). Luego:
@@ -33,7 +33,7 @@ La API utilizada es `clase-1-sqlmodel` del repositorio `ffumaneri/utn-tup-2026-p
 
 ## Comprobaciones
 
-En cada carpeta: `npm test`, `npm run build` y `npm run lint`.
+En cada carpeta: `npm test` y `npm run build`.
 Las pruebas usan respuestas simuladas y no modifican la base de datos.
 
 Para comprobar la práctica 2 manualmente, cambiar temporalmente `/user` por `/usr` en la ruta de la lista: debe mostrar `Not Found`. Restaurar la ruta. Con Slow 4G en Network se ve la carga.
